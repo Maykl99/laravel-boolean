@@ -8,12 +8,18 @@
     <title>@yield('titolo')</title>
 </head>
 <body>
+    <section>
+        @yield('section')
+    </section>
+
     <header>
         @include('templates.header')
     </header>
+
     <main>
         @yield('main')
     </main>
+    
     <footer>
         @include('templates.footer')
     </footer>
