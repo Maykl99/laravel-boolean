@@ -1,0 +1,14 @@
+
+
+
+.card-group > .card{
+    flex: 1 0 50% !important;
+    & img{
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+    }
+}
+
+
+
