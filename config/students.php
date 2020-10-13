@@ -2,6 +2,7 @@
 
 $students=[
     [
+        'slug' => 'a-1',
         'img' => 'https://www.boolean.careers/images/people/ortenzi.png',
         'nome' => 'Daniela',
         'cognome' => 'Ortenzi',
@@ -13,6 +14,7 @@ $students=[
     ],
 
     [
+        'slug' => 'a-2',
         'img' => 'https://www.boolean.careers/images/people/antidormi.png',
         'nome' => 'Nicholas',
         'cognome' => 'Antidormi',
@@ -24,6 +26,7 @@ $students=[
     ],
 
     [
+        'slug' => 'a-3',
         'img' => 'https://www.boolean.careers/images/people/biagini.png',
         'nome' => 'Alessandro',
         'cognome' => 'Biagini',
@@ -35,6 +38,7 @@ $students=[
     ],
 
     [
+        'slug' => 'a-4',
         'img' => 'https://www.boolean.careers/images/people/davide.png',
         'nome' => 'Davide',
         'cognome' => 'Patruno',
@@ -48,3 +52,4 @@ $students=[
 
 
 return $students;
+

@@ -12,17 +12,37 @@ class StudentsController extends Controller
 
     public function __construct()
     {
-        $this->students;
+        $this->students = config('students');  
     }
 
     public function studenti()
     {
-        $data=config('students'); # dati presi dalla cartella config, nome cartella 'students'
+        $data=$this->students; # dati presi dalla cartella config, nome cartella 'students'
         return view('studenti',compact('data')); #['data' => $data]
     }
 
-    public function show()
-    {
-        
+    public function show($id){
+        if(!array_key_exists($id,$this->students)){
+            abort(404);
+        }else{
+            $item = $this->students[$id];
+            return view('show',compact('item'));
+        }
     }
+
+    /* public function slug($slug){
+        $trovato=false;
+        foreach($this->students as $student){
+            if($student['slug'] == $slug){
+                $item = $student;
+                $trovato = true;
+            }
+        }
+
+        if($trovato){
+            return view('slug',compact('item'));
+        }else{
+            abort(404);
+        }
+    } */
 }
