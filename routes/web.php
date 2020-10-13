@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 #pagina predefinita delle rotte, qui passo tramite il metodo statico get, il nome dei file della cartella view, come secondo argomento
 #passo il controller@nomeFunzione, poi il name elemento facilmente manipolabile.
 
-Route::get('/','NomeController@home')->name('home');
-Route::get('/chisiamo','NomeController@chisiamo')->name('chisiamo');
+Route::get('/','NomeController@home')->name('Nome.home');
+Route::get('/chisiamo','NomeController@chisiamo')->name('Nome.chisiamo');
 Route::get('/studenti','StudentsController@studenti')->name('Students.studenti');
 

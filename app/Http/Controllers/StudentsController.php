@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class StudentsController extends Controller
 {
     public function studenti(){
-        $data=config('students');
+        $data=config('students'); # dati presi dalla cartella config, nome cartella 'students'
         return view('studenti',compact('data')); #['data' => $data]
     }
 }
