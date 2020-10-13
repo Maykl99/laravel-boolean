@@ -1,3 +1,4 @@
+{{-- layout di base, è un modello di riferimento per le altre pagine dinamiche --}}
 <!DOCTYPE html>
 <html lang="en">
 <head>

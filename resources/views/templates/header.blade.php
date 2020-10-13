@@ -1,4 +1,6 @@
+{{-- porzione di codice riutilizzabile in più pagine, incluso nel layout --}}
 <div class="offset-md-1 col-md-9">
+  <i class="fa fa-address-card" aria-hidden="true"></i>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"><img id="logo-page" src="https://www.boolean.careers/images/misc/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
