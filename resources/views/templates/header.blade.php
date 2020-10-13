@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto inf-contatti">
         <li class="nav-item active">
-        <a class="nav-link {{url()->current() == route('Nome.home') ? 'text-success' : 'no-a'}}" href="{{ route('Nome.home') }}"><u>Home</u></a>
+        <a class="nav-link {{ Route::currentRouteName() == 'Nome.home' ? 'text-success' : 'no-a'}}" href="{{ route('Nome.home') }}"><u>Home</u></a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{url()->current() == route('Nome.chisiamo') ? 'text-success' : 'no-a'}}" href="{{ route('Nome.chisiamo') }}">Chi siamo</a>

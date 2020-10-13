@@ -19,4 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','NomeController@home')->name('Nome.home');
 Route::get('/chisiamo','NomeController@chisiamo')->name('Nome.chisiamo');
 Route::get('/studenti','StudentsController@studenti')->name('Students.studenti');
+// creo una rotta specifica in base all'id (chiave) dell'elemento selezionato ***
+Route::get('/studenti{id}','StudentsController@show')->name('Students.show');
 
+#*** la chiave è semplicemente l'indice dell'array associativo che fa riferimento a quella collezione di valori!
